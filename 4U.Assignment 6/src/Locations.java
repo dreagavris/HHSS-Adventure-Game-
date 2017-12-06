@@ -15,19 +15,42 @@ import java.net.URL;
  */
 public class Locations {
 
-    private BufferedImage Northimage, Southimage, Eastimage, Westimage;
+    private BufferedImage North, South, East, West;
     private String Image;
+    private String location;
+    
+    public Locations(BufferedImage North, BufferedImage South, BufferedImage East, BufferedImage West, String Image) {
+        this.North = North;
+        this.South = South;
+        this.East = East;
+        this.West = West;
+        this.Image = Image;
+    }
+    
 
+    public Locations(String location) {
+        this.location = location;        
+    }
+    public void  SetNorth( BufferedImage North ){
+        this.North = North;    
+    }
 
-    public void Locations(String Locations, BufferedImage.Northimage, BufferedImage.SouthImage , BufferedImage.WestImage, BufferedImage.EastImage ) {
-    this locations = locations;
-    this.Northimage = Northimage;
-    this.Southimage = Southimage;
-    this.Eastimage = Eastimage;
-    this.Westimage = Westimage;
+    /**
+     *
+     * @param South
+     */
+    public void SetSouth( BufferedImage South ){
+        this.South = South;    
+    }
+    public void SetWest( BufferedImage West ){
+        this.West = West;    
+    }
+    public void SetEast( BufferedImage Eats ){
+        this.East = East;    
+    }
+    
+
     }
        
-
-}
 
 
