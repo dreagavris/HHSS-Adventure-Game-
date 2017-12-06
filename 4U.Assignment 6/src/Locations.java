@@ -1,4 +1,5 @@
 
+import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.FileReader;
 import java.net.URL;
@@ -14,24 +15,19 @@ import java.net.URL;
  */
 public class Locations {
 
-    private BufferedImage image;
-    private BufferedImage[] images;
+    private BufferedImage Northimage, Southimage, Eastimage, Westimage;
+    private String Image;
 
-    /**
-     * @param args the command line arguments
-     */
-    public void theLocationsInfo(String[] args) {
-        FileReader file = null;
-        try {
 
-            URL url = Locations.class.getResource("Scenarios.txt");
-             System.out.println(url);
-            file = new FileReader("src/TScenarios.txt");
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.exit(0);
-        } 
-        
+    public void Locations(String Locations, BufferedImage.Northimage, BufferedImage.SouthImage , BufferedImage.WestImage, BufferedImage.EastImage ) {
+    this locations = locations;
+    this.Northimage = Northimage;
+    this.Southimage = Southimage;
+    this.Eastimage = Eastimage;
+    this.Westimage = Westimage;
     }
+       
 
 }
+
+
